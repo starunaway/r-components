@@ -12,3 +12,5 @@
 - showAllText: 全部按钮的文字
 - itemWidth: 每个按钮的宽度
 - multi： 是否可以多选
+- item.showRedPoint: 在 tab 上显示小红点(接收 socket 数据)
+- userCtrlKey：使用`Ctrl`键控制多选

@@ -1,6 +1,3 @@
-/**
- * Created by starunaway on 2019/7/18.
- */
 import React from 'react';
 import './style.less';
 
@@ -112,6 +109,7 @@ class Tabs extends React.PureComponent {
         onClick={this.handleClick(item)}
       >
         {item.value}
+        {item.showRedPoint ? <div className='red-point'></div> : null}
       </label>
     );
   };

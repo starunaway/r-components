@@ -1,13 +1,29 @@
 .ss-tab {
   color: #ffebc8;
-  display: inline-block;
-
+  display: flex;
   label {
     background: #172422;
     display: inline-block;
-    width: 100px;
     text-align: center;
     margin-right: 1px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    .red-point {
+      background: #b03131;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      top: 3px;
+      right: 3px;
+    }
+  }
+
+  label:hover {
+    background: #193d37;
   }
 
   label:first-child {
@@ -24,7 +40,10 @@
     background: #ff9300;
     color: #1e1e1e;
   }
-
+  .ss-tab-item-checked:hover {
+    background: #ffb000;
+    // color: #1e1e1e;
+  }
   .ss-tab-item-disabled-pure {
     background: #172422;
     color: #7b8280;
@@ -41,7 +60,7 @@
 .ss-tab-big {
   height: 24px;
   label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
   }
 }
@@ -49,7 +68,7 @@
 .ss-tab-normal {
   height: 22px;
   label {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 22px;
   }
 }
@@ -70,7 +89,7 @@
 }
 
 .ss-tab-item-disabled:hover::after {
-  content: "";
+  content: '';
   position: absolute;
 }
 
