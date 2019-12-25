@@ -60,3 +60,74 @@
     }
   }
 }
+
+.second-写法 {
+  .ant-select-dropdown {
+    ul {
+      background-color: #193d37;
+
+      li {
+        height: 22px;
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 22px;
+        font-size: 12px;
+      }
+
+      .ant-select-dropdown-menu-item-selected {
+        color: #f9c152;
+        background-color: #193d37;
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .ant-select-dropdown-menu-item-selected:after {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 13px;
+        border-bottom: 2px solid #f9c152;
+        border-right: 2px solid #f9c152;
+        transform: rotate(45deg);
+        margin-top: 2px;
+        margin-right: 2px;
+      }
+
+      .ant-select-dropdown-menu-item-active {
+        background-color: #136c5e;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .ant-select {
+    height: 22px !important;
+    .ant-select-selection--single {
+      border: 1px solid transparent !important;
+      background: #193d37 !important;
+      height: 22px;
+      .ant-select-selection__rendered {
+        line-height: 20px !important;
+      }
+    }
+    .ant-select-selection--single:hover {
+      background: #136c5e !important;
+    }
+  }
+  .ant-select.ant-select-focused {
+    .ant-select-selection--single {
+      box-shadow: none !important;
+      border: 1px solid #ffb000 !important;
+    }
+  }
+  .ant-select.ant-select-open {
+    .ant-select-selection--single {
+      background: #193d37 !important;
+    }
+  }
+  .ant-select .ant-select-arrow {
+    color: #ffebc8 !important;
+  }
+}

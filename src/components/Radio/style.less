@@ -1,0 +1,29 @@
+.ant-radio-wrapper {
+  .ant-radio {
+    margin-right: -2px;
+    .ant-radio-inner {
+      border: 2px solid #136c5e;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .ant-radio.ant-radio-checked {
+    transition: none;
+    .ant-radio-inner {
+      transition: none;
+      border: 2px solid #ff9300;
+      background: transparent;
+    }
+    .ant-radio-inner:after {
+      position: absolute;
+      transition: none;
+      width: 6px;
+      height: 6px;
+      background: #ff9300;
+      border-radius: 2px;
+      top: 2px;
+      left: 2px;
+      border: none;
+    }
+  }
+}
