@@ -1,7 +1,11 @@
 .ant-radio-wrapper {
   .ant-radio {
     margin-right: -2px;
-
+    &:hover {
+      .ant-radio-inner {
+        background: #68420f;
+      }
+    }
     .ant-radio-inner {
       width: 12px;
       height: 12px;
@@ -11,6 +15,15 @@
 
   .ant-radio.ant-radio-checked {
     transition: none;
+
+    &:hover {
+      .ant-radio-inner {
+        border: 2px solid #f9c152;
+      }
+      .ant-radio-inner::after {
+        background: #f9c152;
+      }
+    }
 
     .ant-radio-inner {
       background: transparent;
