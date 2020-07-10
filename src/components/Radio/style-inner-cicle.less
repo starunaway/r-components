@@ -18,10 +18,10 @@
 
     &:hover {
       .ant-radio-inner {
-        border: 2px solid #f9c152;
+        border: 2px solid #ffb000;
       }
       .ant-radio-inner::after {
-        background: #f9c152;
+        background: #ffb000;
       }
     }
 
@@ -42,5 +42,15 @@
       border-radius: 2px;
       transition: none;
     }
+  }
+  .ant-radio-disabled {
+    .ant-radio-inner {
+      background: #1e1e1e;
+      border: 2px solid #4a4d4c;
+      transition: none;
+    }
+  }
+  .ant-radio-disabled + span {
+    color: #7b8280;
   }
 }
