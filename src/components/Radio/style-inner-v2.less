@@ -1,0 +1,120 @@
+.ant-radio-wrapper {
+  .ant-radio {
+    margin-right: -2px;
+    &:hover {
+      .ant-radio-inner {
+        background: #68420f;
+      }
+    }
+    .ant-radio-inner {
+      width: 12px;
+      height: 12px;
+      border: 2px solid #136c5e;
+    }
+  }
+
+  .ant-radio.ant-radio-checked {
+    transition: none;
+
+    &:hover {
+      .ant-radio-inner {
+        border: 2px solid #ffb000;
+      }
+      .ant-radio-inner::after {
+        background: #ffb000;
+      }
+    }
+
+    .ant-radio-inner {
+      background: transparent;
+      border: 2px solid #ff9300;
+      transition: none;
+    }
+
+    .ant-radio-inner::after {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 4px;
+      height: 4px;
+      background: #ff9300;
+      border: none;
+      border-radius: 2px;
+      transition: none;
+    }
+  }
+  .ant-radio-disabled {
+    .ant-radio-inner {
+      background: #1e1e1e;
+      border: 2px solid #4a4d4c;
+      transition: none;
+    }
+  }
+  .ant-radio-disabled + span {
+    color: #7b8280;
+  }
+}
+// radio
+.ant-radio-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ant-radio {
+  margin-right: -2px;
+  &:hover {
+    .ant-radio-inner {
+      background: #68420f;
+    }
+  }
+  .ant-radio-inner {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #136c5e;
+  }
+}
+.ant-radio + span {
+  padding-left: 6px;
+}
+
+.ant-radio.ant-radio-checked {
+  transition: none;
+
+  &:hover {
+    .ant-radio-inner {
+      border: 2px solid #ffb000;
+    }
+    .ant-radio-inner::after {
+      background: #ffb000;
+    }
+  }
+
+  .ant-radio-inner {
+    background: transparent;
+    border: 2px solid #ff9300;
+    transition: none;
+  }
+
+  .ant-radio-inner::after {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 4px;
+    height: 4px;
+    background: #ff9300;
+    border: none;
+    border-radius: 2px;
+    transition: none;
+  }
+}
+
+.ant-radio-disabled {
+  .ant-radio-inner {
+    background: #1e1e1e;
+    border: 2px solid #4a4d4c;
+    transition: none;
+  }
+}
+.ant-radio-disabled + span {
+  color: #7b8280;
+}
